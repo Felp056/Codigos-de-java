@@ -23,6 +23,17 @@ public class Animais {
         m.raca = s.next();
          System.out.println("Digite o sexo:");
         m.sexo = s.next();
-        System.out.println(m.nome+" de cor"+m.cor+" da raça "+m.raca+" do sexo"+m.sexo+" pesa "+m.peso+"KG");
+        System.out.println("Digite o tamanho: ");
+        m.tamanho = s.nextInt();
+         System.out.println(m.nome+" de cor "+m.cor+" da raça "+m.raca+" do sexo "+m.sexo+" pesa "+m.peso+"KG");
+        if(m.tamanho > 60){
+            System.out.println("Woofo!, Wooof!");
+        }
+        else if(m.tamanho > 14){
+            System.out.println("Ruff!, Ruff!");
+        }else{
+            System.out.println("Yip!, Yip!");
+        }
+       
     }
 }

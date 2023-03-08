@@ -14,5 +14,6 @@ public class tipos {
         String sexo;
         String cor;
         String raca;
+        int tamanho;
     
 }
