@@ -13,8 +13,9 @@ public class Animais {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         tipos m = new tipos();
-        System.out.println("Digite o nome:");
-        m.nome = s.next();
+        m.construtor("pluto");
+       /* System.out.println("Digite o nome:");
+        m.nome = s.next();*/
          System.out.println("Digite a cor dele :");
         m.cor = s.next();
          System.out.println("Digite o peso:");
@@ -25,7 +26,8 @@ public class Animais {
         m.sexo = s.next();
         System.out.println("Digite o tamanho em cm: ");
         m.tamanho = s.nextInt();
-         System.out.println(m.nome+" de cor "+m.cor+" da raça "+m.raca+" do sexo "+m.sexo+" pesa "+m.peso+"KG");
+        System.out.println(m.GetNam());
+         System.out.println(" de cor "+m.cor+" da raça "+m.raca+" do sexo "+m.sexo+" pesa "+m.peso+"KG");
         if(m.tamanho > 60){
             System.out.println("Woofo!, Wooof!");
         }
@@ -34,6 +36,6 @@ public class Animais {
         }else{
             System.out.println("Yip!, Yip!");
         }
-       
+      
     }
 }

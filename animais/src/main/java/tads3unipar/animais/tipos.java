@@ -9,11 +9,17 @@ package tads3unipar.animais;
  * @author felip
  */
 public class tipos {
-        String nome;
+      private  String nome;
         int peso;
         String sexo;
         String cor;
         String raca;
         int tamanho;
-    
+        public void construtor(String Cname){
+         nome = Cname;    
+        }
+        public String GetNam(){
+         return "Nome = "+ nome;   
+        
+        }
 }
